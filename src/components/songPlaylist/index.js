@@ -2,17 +2,28 @@ import './style.css';
 import data from '../../data/data';
 
 const SongPlaylist = () => {
-  return (
-    <div>
-        <div class='songPlaylist'>
-            <img className='album-image' src={data.album.images[0].url} alt="album-cover"/>
-            <p className='text-title' id="trackTitle">{data.name}</p>
-            <p className='text-artist'>{data.album.artists[0].name}</p>
-            <p className='text-album'>{data.album.name}</p>
-            <button type='button' className='button-action' value='Select'> Select</button>
+    const renderTracks = data =>
+    data
+      .map(track => 
+        <div className='song-item' key={track.id}>
+        <div class='song-playlist'>
+        <img src={track.album.images[1].url} alt={track.name} className='album-image'/>
+                <div className='song-info'>
+                    <h2 className='text-title'>{track.name}</h2>
+                    <h3 className='text-artist'>{track.artists[0].name}</h3>
+                    <h3 className='text-album'>{track.album.name}</h3>
+                </div>
+                <form target='_blank' action={track.external_urls.spotify}>
+                    <button type='submit' className='button-action'>Select</button>
+                </form>
+            </div>
+        </div>);
+
+    return (
+        <div className='song-container'>
+            {renderTracks(data)}
         </div>
-    </div>
     );
-  }
+}
 
 export default SongPlaylist;

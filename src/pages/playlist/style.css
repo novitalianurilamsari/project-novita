@@ -1,0 +1,23 @@
+/* body */
+body {
+    background-color: antiquewhite;
+}
+
+/* h1*/
+h1 {
+    color: #16697a;
+    margin-left: 0px;
+    text-align: left;
+}
+  
+/* h2 */
+h2 {
+    font-size: 10px;
+    display:inline-flex;
+}
+
+/* span*/
+span {
+    color: red;
+}
+  
