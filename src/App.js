@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  console.log(process.env.REACT_APP_YOUR_GIGIH_APP_API_KEY);
   return (
     <div className="App">
       <header className="App-header">
@@ -11,11 +12,11 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://hainovitalia.blogspot.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          ini blog novi
         </a>
       </header>
     </div>
