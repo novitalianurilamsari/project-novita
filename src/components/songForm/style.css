@@ -1,6 +1,19 @@
-/* button-container*/
-.button-container {
-    margin: auto;
+.song-form {
+    color: #ccc;
+}
+
+.input-form {
+    color: #666;
+    display: block;
+    width: 50%;
+    margin-left: 300px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #a6f8c4;
+    box-sizing: border-box;
+    line-height: 1.5;
 }
 
 /*button action*/
@@ -16,8 +29,9 @@
     border: #eee 1px solid;
     border-radius: 6px;
     box-shadow: 0 7px #1db954;
-    margin: 10px;
+    margin-left: 10px;
 }
+
 .button-action:active {
     position: relative;
     box-shadow: none;

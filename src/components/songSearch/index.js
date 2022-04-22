@@ -1,13 +1,29 @@
 import React from "react";
-import { SongSearchButton } from "..";
+import { SearchSongForm } from "..";
 import "./style.css";
 
-function SongSearch(props) {
-  const { handleChange, handleClick, inputValue } = props;
-
+function SongSearch({
+  handleChange,
+  handleSubmit,
+  handleClick,
+  inputValue,
+  isFormActive,
+}) {
   return (
     <div className="song-search">
-      <SongSearchButton placeholder="Search" handleChange={handleChange} value={inputValue} handleClick={handleClick} />
+      <h1>Spotify Premium</h1>
+      <SearchSongForm
+        placeholder="Search"
+        handleChange={handleChange}
+        value={inputValue}
+        handleSubmit={handleSubmit}
+      />
+      <button
+        className={isFormActive ? "ActiveButton" : "PlaylistButton"}
+        onClick={handleClick}
+      >
+        Create Playlist
+      </button>
     </div>
   );
 }

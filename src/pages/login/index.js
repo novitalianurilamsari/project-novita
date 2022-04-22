@@ -1,5 +1,5 @@
 import React from "react";
-import { SongButton } from "../../components";
+import { ButtonLogin } from "../../components";
 import "./style.css";
 import logo from '../../Spotify.svg';
 
@@ -15,7 +15,7 @@ class Login extends React.Component {
         <h1>Million of Songs.</h1>
         <h2>Free on Spotify.</h2>      
         <p>Klik Login untuk mendengarkan jutaan lagu gratis lainnya.</p>
-        <SongButton 
+        <ButtonLogin 
           className="button-action"
           name="Login" 
           url={linkURL}

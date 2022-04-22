@@ -1,15 +1,18 @@
 import React from "react";
-import { SongButton } from "..";
+import { SongButton } from "../../components";
 import './style.css';
 
-function songCard({ imgAlbum, altImg, songTitle, artistName, btnName, btnUrl, onClick}) {
+function songCard({ imgAlbum, altImg, songTitle, artistName, btnName, onClick, enableBtn}) {
   return (
     <div className="song-card">
-      <img src={imgAlbum} alt={altImg} className="album-image" />
-      <p></p>
+      <img className="album-image" src={imgAlbum} alt={altImg} />
       <h2 className="text-title">{songTitle}</h2>
-      <h4 className="text-artist">{artistName}</h4>
-      <SongButton className="button-actions" name={btnName} url={btnUrl} onClick={onClick} />
+      <p className="text-artist">{artistName}</p>
+      {enableBtn ? (
+        <SongButton className="action-button" name={btnName} onClick={onClick} />
+      ) : (
+        <></>
+      )}
     </div>
   );
 }
