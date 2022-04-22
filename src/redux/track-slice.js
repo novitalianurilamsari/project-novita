@@ -1,10 +1,10 @@
-import { createSlice } from "@reduxjs/toolkit";
-import axios from "axios";
-import { SPOTIFY_ENDPOINT } from "../config/constant";
+import { createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
+import { SPOTIFY_ENDPOINT } from '../config/constant';
 
 // Slice
 export const trackSlice = createSlice({
-  name: "track",
+  name: 'track',
   initialState: {
     trackList: [],
     selectedList: [],
@@ -23,8 +23,7 @@ export const trackSlice = createSlice({
   },
 });
 
-export const { getTrackList, getSelectedList, getSelectedUri } =
-  trackSlice.actions;
+export const { getTrackList, getSelectedList, getSelectedUri } = trackSlice.actions;
 
 export default trackSlice.reducer;
 
@@ -34,12 +33,12 @@ export const searchTrack = (query, token, tokenType) => async (dispatch) => {
     .get(`${SPOTIFY_ENDPOINT}/search`, {
       headers: {
         Authorization: `${tokenType} ${token}`,
-        Accept: "application/json",
-        "Content-Type": "application/json",
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
       },
       params: {
         q: query,
-        type: "album,track,artist",
+        type: 'album,track,artist',
         limit: 10,
       },
     })

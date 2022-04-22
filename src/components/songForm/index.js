@@ -1,10 +1,13 @@
-import React from "react";
+import React from 'react';
 import './style.css';
 
-function SongForm({ titleValue, descValue, handleSubmit, onChange }) {
+function SongForm({
+  // eslint-disable-next-line react/prop-types
+  titleValue, descValue, handleSubmit, onChange,
+}) {
   return (
     <div className="SongForm">
-        <h4>ayo buat playlistmu!</h4>
+      <h4>ayo buat playlistmu!</h4>
       <form onSubmit={handleSubmit}>
         <input
           className="input-form"

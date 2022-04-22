@@ -1,8 +1,10 @@
-import React from "react";
-import { SongButton } from "../../components";
+import React from 'react';
+import { SongButton } from '..';
 import './style.css';
 
-function songCard({ imgUrl, altImg, trackTitle, artistName, btnName, onClick, enableBtn}) {
+function songCard({
+  imgUrl, altImg, trackTitle, artistName, btnName, onClick, enableBtn,
+}) {
   return (
     <div className="song-card">
       <img className="album-image" src={imgUrl} alt={altImg} />

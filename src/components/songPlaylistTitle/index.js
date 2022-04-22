@@ -1,7 +1,8 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
 
 function SongPlaylistTitle(props) {
+  // eslint-disable-next-line react/prop-types
   const { title, list } = props;
   return (
     <div className="list-title">

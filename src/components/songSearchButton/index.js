@@ -1,8 +1,11 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+import React from 'react';
 import './style.css';
 
 function SongSearchButton(props) {
-  const { placeholder, handleChange, value, handleClick } = props;
+  const {
+    placeholder, handleChange, value, handleClick,
+  } = props;
 
   return (
     <div className="search-button">

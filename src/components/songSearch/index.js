@@ -1,9 +1,10 @@
-import React from "react";
-import { SearchSongForm } from "..";
-import "./style.css";
-import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { SIGNIN_URL } from "../../config/constant";
+/* eslint-disable react/prop-types */
+import React from 'react';
+import { SearchSongForm } from '..';
+import './style.css';
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { SIGNIN_URL } from '../../config/constant';
 
 function SongSearch({
   handleChange,
@@ -12,11 +13,11 @@ function SongSearch({
   isUserLoggedin,
   imgUrl,
 }) {
-    const { selectedList } = useSelector((state) => state.track);
+  const { selectedList } = useSelector((state) => state.track);
 
-    const handleAlert = () => {
-      alert("Pilih dulu track kamu ya!");
-    };
+  const handleAlert = () => {
+    alert('Pilih dulu track kamu ya!');
+  };
 
   return (
     <div className="song-search">
@@ -37,7 +38,7 @@ function SongSearch({
             Create Playlist
           </button>
         )}
-        {imgUrl !== "" ? (
+        {imgUrl !== '' ? (
           <img src={imgUrl} alt="" className="ProfileImage" />
         ) : (
           <a className="button-action" href={SIGNIN_URL}>

@@ -1,13 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 // Slice
 export const credentialSlice = createSlice({
-  name: "credential",
+  name: 'credential',
   initialState: {
-    userId: "",
-    token: "",
-    tokenType: "",
-    imgUrl: "",
+    userId: '',
+    token: '',
+    tokenType: '',
+    imgUrl: '',
     isLoggedin: false,
   },
   reducers: {
@@ -29,13 +29,15 @@ export const credentialSlice = createSlice({
   },
 });
 
-export const { getToken, getTokenType, getUserId, getImageUrl, getIsLoggedIn } = credentialSlice.actions;
+export const {
+  getToken, getTokenType, getUserId, getImageUrl, getIsLoggedIn,
+} = credentialSlice.actions;
 
 export default credentialSlice.reducer;
 
 export const getHashParams = (url) => (dispatch) => {
   const hashUrl = url.substr(1);
   const hashComponent = new URLSearchParams(hashUrl);
-  dispatch(getToken(hashComponent.get("access_token")));
-  dispatch(getTokenType(hashComponent.get("token_type")));
+  dispatch(getToken(hashComponent.get('access_token')));
+  dispatch(getTokenType(hashComponent.get('token_type')));
 };
