@@ -21,3 +21,25 @@ span {
     text-align: center;
     margin-top: 50px;
 }
+
+/* select */
+.clear-history {
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-left: 12px;
+    color: #ffffff;
+    background-color: #ff0800;
+    border: rgb(78, 8, 8) 1px solid;
+    border-radius: 6px;
+    box-shadow: 0 7px #b9271d;
+    margin: 10px;
+}
+
+.clear-history:active {
+    position: relative;
+    box-shadow: none;
+    background-color: #f09888;
+}
+  
