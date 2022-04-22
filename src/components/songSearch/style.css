@@ -3,3 +3,25 @@
     background-color:#212121;
     height: auto;
 }
+
+
+/*button action*/
+.button-action {
+    width: 400px;
+    height: 100px;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-left: 12px;
+    color: #212121;
+    background-color: #ede7e3;
+    border-color: #489fb5;
+    border: #eee 1px solid;
+    border-radius: 6px;
+    box-shadow: 0 7px #1db954;
+    margin: 10px;
+}
+.button-action:active {
+    position: relative;
+    box-shadow: none;
+    background-color: #81b71a;
+}
