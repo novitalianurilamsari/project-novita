@@ -8,6 +8,7 @@ function SearchSongForm({
     <form className="Form" onSubmit={handleSubmit}>
       <input
         className="search"
+        data-testid="search_input"
         type="text"
         placeholder={placeholder}
         onChange={handleChange}
