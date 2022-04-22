@@ -5,6 +5,7 @@ import './style.css';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { SIGNIN_URL } from '../../config/constant';
+import { Button } from '@material-ui/core';
 
 function SongSearch({
   handleChange,
@@ -44,9 +45,9 @@ function SongSearch({
             AYO Buat Playlistmu
           </Link>
         ) : (
-          <button className="button-create" onClick={handleAlert}>
+          <Button className="button-create" onClick={handleAlert}>
             Create Playlist
-          </button>
+          </Button>
         )}
       </div>
     </div>

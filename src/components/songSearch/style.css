@@ -23,20 +23,8 @@
 }
 
 .button-create {
-    width: 300px;
-    height: 40px;
-    border-radius: 8px;
-    font-size: 16px;
-    color: #212121;
-    background-color: #1db954;
-    border-color: #81b71a;
     border: #eee 1px solid;
     border-radius: 6px;
-    box-shadow: 0 7px #81b71a;
     margin: 40px;
 }
-.button-create:active {
-    position: relative;
-    box-shadow: none;
-    background-color: #81b71a;
-}
+
