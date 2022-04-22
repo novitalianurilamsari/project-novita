@@ -1,0 +1,19 @@
+/*search button*/
+.search-button {
+    background-color: #212121;
+    color: aliceblue;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 160px;
+    height: 150px;
+}
+
+/*search*/
+.search{
+    width: 350px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 24px;
+    border-color: #489fb5;
+}
+

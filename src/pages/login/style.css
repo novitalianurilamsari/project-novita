@@ -1,0 +1,13 @@
+
+/*logo */
+.logo {
+    width: 320px;
+}
+/* button login */
+.button-login {
+    text-align: center;
+    margin-bottom: 100px;
+    height: auto;
+    background-color: #333;
+    color: aliceblue;
+}

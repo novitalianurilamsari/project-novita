@@ -1,0 +1,23 @@
+/* h1*/
+h1 {
+    color: #16697a;
+    margin-left: 0px;
+    text-align: center;
+}
+  
+/* span*/
+span {
+    color: red;
+}
+  
+/*search result */
+.search-result {
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* no data */
+.no-data {
+    text-align: center;
+    margin-top: 50px;
+}

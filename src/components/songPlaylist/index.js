@@ -7,7 +7,7 @@ const SongPlaylist = () => {
       .map(track => 
         <div className='song-item' key={track.id}>
         <div class='song-playlist'>
-        <img src={track.album.images[1].url} alt={track.name} className='album-image'/>
+            <img src={track.album.images[1].url} alt={track.name} className='album-image'/>
                 <div className='song-info'>
                     <h2 className='text-title'>{track.name}</h2>
                     <h3 className='text-artist'>{track.artists[0].name}</h3>
