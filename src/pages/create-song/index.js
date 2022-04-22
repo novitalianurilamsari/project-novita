@@ -159,7 +159,7 @@ function CreateSong() {
         handleSubmit={handleSubmitPlaylist}
         onChange={handleOnChangePlaylist}
       />
-      <SongPlaylistTitle title="User Choice" list={getTrackList(selectedList, false)} />
+      <SongPlaylistTitle title="Track List yang akan kamu buat" list={getTrackList(selectedList, false)} />
     </div>
   );
 }

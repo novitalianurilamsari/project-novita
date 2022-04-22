@@ -2,25 +2,40 @@
 .song-search {
     background-color:#212121;
     height: auto;
+    display: grid;
+    place-items: center;
 }
 
-
-/*button action*/
-.button-action {
+/* class search*/
+.class-search {
     width: 400px;
     height: 100px;
     border-radius: 8px;
     font-size: 18px;
-    margin-left: 12px;
+    line-height: 0.2px;
     color: #212121;
-    background-color: #ede7e3;
+    background-color: #e3ede3;
     border-color: #489fb5;
     border: #eee 1px solid;
     border-radius: 6px;
-    box-shadow: 0 7px #1db954;
+    box-shadow: 0 7px #1ed760;
     margin: 10px;
 }
-.button-action:active {
+
+.button-create {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #212121;
+    background-color: #1db954;
+    border-color: #81b71a;
+    border: #eee 1px solid;
+    border-radius: 6px;
+    box-shadow: 0 7px #81b71a;
+    margin: 40px;
+}
+.button-create:active {
     position: relative;
     box-shadow: none;
     background-color: #81b71a;

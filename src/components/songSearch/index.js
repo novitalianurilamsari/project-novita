@@ -22,28 +22,31 @@ function SongSearch({
   return (
     <div className="song-search">
       <h1>Spotify Premium</h1>
-      <SearchSongForm
-        placeholder="Search"
-        handleChange={handleChange}
-        value={inputValue}
-        handleSubmit={handleSubmit}
-      />
-      <div className="LeftSideNav">
-        {selectedList.length > 0 && isUserLoggedin ? (
-          <Link to="/create-song" className="ActiveButton">
-            Create Playlist
-          </Link>
-        ) : (
-          <button className="PlaylistButton" onClick={handleAlert}>
-            Create Playlist
-          </button>
-        )}
-        {imgUrl !== '' ? (
-          <img src={imgUrl} alt="" className="ProfileImage" />
+        {imgUrl !== "" ? (
+          <img src={imgUrl} alt="" className="profil-login" />
         ) : (
           <a className="button-action" href={SIGNIN_URL}>
             Login
           </a>
+        )}
+        <div className="class-search">
+        <h5>tekan entar untuk melakukan pencarian...</h5>
+        <SearchSongForm
+        placeholder="Search"
+        handleChange={handleChange}
+        value={inputValue}
+        handleSubmit={handleSubmit}
+        />
+      </div>
+      <div className="container-search"> 
+        {selectedList.length > 0 && isUserLoggedin ? (
+          <Link to="/create-song" className="button-create">
+            AYO Buat Playlistmu
+          </Link>
+        ) : (
+          <button className="button-create" onClick={handleAlert}>
+            Create Playlist
+          </button>
         )}
       </div>
     </div>

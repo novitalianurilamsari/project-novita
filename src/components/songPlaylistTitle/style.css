@@ -3,10 +3,18 @@
   background-color: aliceblue;
 }
 
+.list-title h2 {
+  margin: 10px;
+}
+
 /*list container*/
 .list-container {
-  display:inline-flex;
-  column-gap: 40px;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  margin-left: 100px;
+  margin-top: 30px;
 }
 
 /*button action*/
@@ -29,3 +37,4 @@
   box-shadow: none;
   background-color: #81b71a;
 }
+
