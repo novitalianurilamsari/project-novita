@@ -10,7 +10,6 @@ function SongButton({ name, onClick, link }) {
       <a href={link}>
         <button
           className="button-action"
-          data-testid="button_test"
           onClick={() => {
             onClick();
             setSelected(!isSelected);

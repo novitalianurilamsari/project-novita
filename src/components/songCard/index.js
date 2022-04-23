@@ -7,7 +7,7 @@ function songCard({
 }) {
   return (
     <div className="song-card" data-testid="song_track">
-      <img className="album-image" src={imgUrl} alt={altImg} data-testid="img_track" />
+      <img className="album-image" src={imgUrl} alt={altImg} data-testid="img_track"/>
       <h2 className="text-title" data-testid="title_track">{trackTitle}</h2>
       <p className="text-artist" data-testid="artist_track">{artistName}</p>
       {enableBtn ? (
